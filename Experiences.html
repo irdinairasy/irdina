@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Experience</title>
+<style>
+body {
+    background: linear-gradient(135deg, #d6bfff, #e6d6f2);
+    font-family: courtier;
+    margin: 0;
+    padding: 0;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    background-color: #E8C8F7;
+    padding: 10px 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.home-btn {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    padding: 8px 12px;
+    background: MediumOrchid;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-right: 15px;
+
+}
+
+.home-btn:hover {
+    background: #9b42b6;
+    transform: translateY(-3px);
+}
+
+.header-row h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+    font-family: courier;
+    color: #4B0082;
+}
+
+.layout {
+    display: flex;
+    width: 100%;
+}
+
+nav { 
+    width: 200px; 
+    height: 100vh; 
+    min-height: 75vh; 
+    background: linear-gradient(180deg, #dba4ff, #ffcef5); 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    text-align: center; 
+}
+
+nav a { 
+    display: block; 
+    background: white; 
+    padding: 10px; 
+    margin: 8px 0; 
+    color: #663399; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 10px;
+}
+
+nav a:hover { 
+    background: #f2e6ff; 
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box h2 {
+    color: #663399;
+}
+</style>
+</head>
+
+<body>
+
+<iframe src="music.html" allow="autoplay" style="display:none;"></iframe>
+
+<div class="header-row">
+    <a href="index.html" class="home-btn">&#127968;</a>
+    <h1>Experiences</h1>
+</div>
+
+<div class="layout">
+
+    <nav>
+        <a href="About me.html">&#129493; About me</a>
+        <a href="My Family.html">&#128106; My Family</a>
+        <a href="Education.html">&#128218; Education</a>
+        <a href="Skill.html">&#128187; Skill</a>
+        <a href="Experiences.html">&#128188; Experiences</a>
+    </nav>
+
+    <div class="content">
+        <!-- Work Experience -->
+        <a href="work.html" style="text-decoration:none; color:black;">
+            <div class="box">
+                <h2>Work Experience</h2>
+                <p>Click to view my past job experience.</p>
+            </div>
+        </a>
+
+        <!-- Intern Experience -->
+        <a href="intern.html" style="text-decoration:none; color:black;">
+            <div class="box">
+                <h2>Intern Experience</h2>
+                <p>Click to view details about my internship.</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

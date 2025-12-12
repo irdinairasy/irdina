@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is my education section.</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #F3E1FA;  
+    margin: 0;
+    padding: 0;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    background-color: #E8CCF5; 
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.home-btn {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    padding: 8px 12px;
+    background: #BA55D3; 
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.3s ease;
+}
+.home-btn:hover {
+    background: #8A2BE2; 
+    transform: translateY(-4px);
+}
+
+.page-title {
+    flex: 1;
+    border-left: 10px;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 35px;
+    font-family: courier;
+    color: #4B0082;
+    text-align: center;
+}
+
+.layout {
+    display: flex;
+    width: 100%;
+}
+
+nav { 
+    width: 200px; 
+    min-height: 75vh; 
+    background: linear-gradient(180deg, #dba4ff, #ffcef5); 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    text-align: center; 
+}
+
+nav a { 
+    display: block; 
+    background: white; 
+    padding: 10px; 
+    margin: 8px 0; 
+    color: #663399; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 10px;
+}
+
+nav a:hover { 
+    background: #f2e6ff; 
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.edu-card {
+    background: #ffffff;
+    width: 22%;
+    padding: 20px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+    border: 2px solid #E8CCF5;
+}
+
+.edu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.edu-card img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.edu-card h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #BA55D3; 
+}
+
+.edu-card span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #8A2BE2;
+    font-style: italic;
+}
+
+.edu-table {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+}
+
+.edu-table th {
+    background: #BA55D3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.edu-table td {
+    border: 1px solid #E8CCF5;
+    padding: 8px;
+    text-align: center;
+    background: #F8EDFF;
+}
+
+.edu-table tr:nth-child(even) td {
+    background: #F3E1FA;
+}
+
+</style>
+</head>
+
+<body>
+
+<iframe src="music.html" allow="autoplay" style="display:none;"></iframe>
+
+<div class="header-row">
+    <a href="index.html" class="home-btn">&#127968;</a>
+    <h1 class="page-title"><strong>Education</strong></h1>
+</div>
+
+<div class="layout">
+
+    <nav>
+        <a href="About me.html">&#129493; About me</a>
+        <a href="My Family.html">&#128106; My Family</a>
+        <a href="Education.html">&#128218; Education</a>
+        <a href="Skill.html">&#128187; Skill</a>
+        <a href="Experiences.html">&#128188; Experiences</a>
+    </nav>
+
+    <div class="content">
+        <div class="education-container">
+
+            <a href="https://maps.app.goo.gl/fMiphvac2dco93aA7" target="_blank" class="edu-card">
+                <img src="skpp logo.jpg" alt="Primary School Logo">
+                <h3>Ujian Pencapaian Sekolah Rendah</h3>
+                <p>Sekolah Kebangsaan Kampung Pasir Putih</p>
+                <span>2011 – 2016</span>
+                <p>I completed my primary education with great achievements.</p>
+
+                <table class="edu-table">
+                    <tr><th>Subject</th><th>Result</th></tr>
+                    <tr><td>Bahasa Melayu</td><td>B</td></tr>
+                    <tr><td>Mathematics</td><td>C</td></tr>
+                    <tr><td>Science</td><td>D</td></tr>
+                    <tr><td>Sejarah</td><td>C</td></tr>
+                    <tr><td>Pendidikan Islam</td><td>C</td></tr>
+                    <tr><td>English</td><td>C</td></tr>
+                </table>
+            </a>
+
+            <a href="https://maps.app.goo.gl/XgzHgEqrZnCzKtGt8" target="_blank" class="edu-card">
+                <img src="smktpr logo.jpg" alt="High School Logo">
+                <h3>Sijil Pelajaran Malaysia</h3>
+                <p>Sekolah Menengah Kebangsaan Tanjung Puteri Resort</p>
+                <span>2017 – 2022</span>
+                <p>I completed my secondary school with excellent SPM results.</p>
+
+                <table class="edu-table">
+                    <tr><th>Subject</th><th>Result</th></tr>
+                    <tr><td>Bahasa Melayu</td><td>A-</td></tr>
+                    <tr><td>Bahasa Inggeris</td><td>C</td></tr>
+                    <tr><td>Pendidikan Islam</td><td>B+</td></tr>
+                    <tr><td>Sejarah</td><td>A-</td></tr>
+                    <tr><td>Mathematics</td><td>A</td></tr>
+                    <tr><td>Science</td><td>B+</td></tr>
+                    <tr><td>Perniagaan</td><td>B+</td></tr>
+                    <tr><td>Tasawwur Islam</td><td>A</td></tr>
+                </table>
+            </a>
+
+            <a href="https://maps.app.goo.gl/G5F3LVXUFuGp3Nhe7" target="_blank" class="edu-card">
+                <img src="uitm logo.jpg" alt="UiTM Logo">
+                <h3>Diploma in Information Management</h3>
+                <p>Universiti Teknologi MARA (UiTM) Segamat</p>
+                <span>2023 – 2026</span>
+                <p>I am studying Information Management for 2 years and 6 months.</p>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

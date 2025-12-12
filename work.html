@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>Work Experience</title>
+
+<style>
+body {
+    background-image: url('purple.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4b2e83;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8CCF5;
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.header-row h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #663399;
+}
+
+.back-btn {
+    font-size: 16px;
+    display: inline-block;
+    color: white;
+    padding: 10px 14px;
+    background: MediumOrchid;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background: #9b42b6;
+    transform: translateY(-3px);
+    color: white;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    width: 75%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #4b2e83;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    list-style-type: square;
+}
+
+.image-gallery {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 90%;
+        padding: 30px;
+    }
+    .image-gallery img {
+        width: 45%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-gallery img {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<iframe src="music.html" allow="autoplay" style="display:none;"></iframe>
+
+<div class="header-row">
+    <a href="experiences.html" class="back-btn">← Back</a>
+    <h1>Work Experience</h1>
+</div>
+
+<div class="card">
+
+    <h3>Cashier - Greatzone Pasir Putih</h3>
+
+    <p>
+        This company supplies various kinds of kitchenware and tableware such as
+        glasses, melamine, stainless steel, aluminum, plastic ware, and ceramic.
+        These products are suitable for use in households, hotels, restaurants,
+        and catering.
+    </p>
+
+    <p><strong>Duration:</strong> March 2022 – August 2023</p>
+
+    <ul>
+        <li>Handled daily cash transactions</li>
+        <li>Provided customer service</li>
+        <li>Maintained shop display and inventory</li>
+    </ul>
+
+    <div class="image-gallery">
+        <img src="work1.jpeg" width="200" height="250">
+        <img src="work2.jpeg" width="200" height="250">
+        <img src="work3.jpeg" width="300" height="250">
+    </div>
+
+</div>
+
+</body>
+</html>
