@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>Personal Information</title>
+
+<style>
+body {
+    background-color: Thistle;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #E8CCF5; 
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-row .center-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-row h1 {
+    margin: 0;
+    font-size: 40px;
+    font-family: "Courier";
+    color: #4B0082;
+}
+
+.home-btn {
+    font-size: 20px;
+    color: white;
+    padding: 8px 12px;
+    background: #BA55D3; 
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #8A2BE2; 
+    transform: translateY(-3px);
+}
+
+.sidebar-container {
+    display: flex;
+    width: 100%;
+}
+
+nav { 
+    width: 200px; 
+    min-height: 100vh; 
+    background: linear-gradient(180deg, #dba4ff, #ffcef5); 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    text-align: center; 
+}
+
+nav a { 
+    display: block; 
+    background: white; 
+    padding: 10px; 
+    margin: 8px 0; 
+    color: #663399; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 10px;
+}
+nav a:hover { 
+    background: #f2e6ff; 
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.shape-container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    border: 1px solid green;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.shape-left {
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 8px;
+    border: 1px solid #ccc;
+    width: 180px;
+    background: white;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+}
+
+.desc {
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<iframe src="music.html" allow="autoplay" style="display:none;"></iframe>
+
+<div class="header-row">
+
+    <a href="index.html" class="home-btn">&#127968;</a>
+
+    <div class="center-title">
+        <h1><strong>Personal Information</strong></h1>
+    </div>
+
+</div>
+
+<div class="sidebar-container">
+
+    <nav> 
+        <a href="About me.html">&#129493 About me</a> 
+        <a href="My Family.html">&#128106 My Family</a> 
+        <a href="Education.html">&#128218 Education</a> 
+        <a href="Skill.html">&#128187 Skill</a> 
+        <a href="Experiences.html">&#128188 Experiences</a> 
+    </nav>
+
+    <div class="main-content">
+
+        <h2>Hello & Assalamualaikum!</h2>
+
+        <div class="shape-container">
+            <img src="syiqin.jpeg" class="shape-left">
+
+            <p><strong>Name:</strong> Nurul Irdina Asyiqin Binti Abu Bakar</p>
+            <p><strong>Email:</strong> irdinairasy@gmail.com</p>
+            <p><strong>Born:</strong> 05 Disember 2004, Johor Bahru</p>
+
+            <p><strong>Social Media:</strong></p>
+            <div class="icons">
+                <a href="https://www.instagram.com"><img src="instagram.jpg"></a>
+                <a href="https://www.facebook.com"><img src="facebook.jpg"></a>
+                <a href="https://www.tiktok.com"><img src="tiktok.jpg"></a>
+            </div>
+
+            <p>*I am a cheerful and curious person who loves to learn new things…</p>
+        </div>
+
+        <h2>🌟 My Ambition</h2>
+        <p>I want to become a <strong>professional nurse</strong>.</p>
+
+        <h2>🎨 My Hobbies</h2>
+        <ul style="display:inline-block; text-align:left;">
+            <li>Reading</li>
+            <li>Listening to music</li>
+            <li>Spending time with family</li>
+            <li>Playing badminton</li>
+        </ul>
+
+        <h2>🍽 My Favourite Food</h2>
+
+        <div class="gallery">
+            <div class="gallery-item"><img src="nasi lemak.jpg"><div class="desc">Nasi Lemak</div></div>
+            <div class="gallery-item"><img src="pizza.jpg"><div class="desc">Pizza</div></div>
+            <div class="gallery-item"><img src="cakes.jpg"><div class="desc">Cakes</div></div>
+        </div>
+
+        <h2>🎧 Favourite Song</h2>
+        <img src="audio.jpg" width="150" height="150"><br>
+
+        <audio controls autoplay loop style="margin-top:10px; width:350px;">
+            <source src="mimpi.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+</div>
+
+</body>
+</html>
