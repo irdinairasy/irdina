@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Intern Experience</title>
+<link rel="stylesheet" href="intern.css">
+</head>
+
+<body>
+
+<iframe src="music.html" allow="autoplay" style="display:none;"></iframe>
+
+<div class="header-row">
+    <a href="Experiences.html" class="back-btn">← Back</a>
+    <h1>Intern Experience</h1>
+</div>
+
+<div class="card">
+    <h3>Industrial Training – Adtec JTM Campus Pasir Gudang & Senai</h3>
+    <p><strong>July 2025 – September 2025</strong></p>
+
+    <ul>
+        <li><b>Assisted in documentation and filing tasks</b></li>    
+
+    <div class="gallery">
+      <img src="intern1.jpeg" alt="Intern1" class="gallery-item" onclick="openModal('modal1','Intern 1')">
+      <img src="intern2.jpeg" alt="Intern2" class="gallery-item" onclick="openModal('modal2','Intern 2')">
+      <img src="intern3.jpeg" alt="Intern3" class="gallery-item" onclick="openModal('modal3','Intern 3')">
+      <img src="intern4.jpeg" alt="Intern4" class="gallery-item" onclick="openModal('modal4','Intern 4')">
+    </div>
+
+      <br><li><b>participating in the Gempak Merdeka Carnival program jointly organized by ADTEC JTM Pasir Gudang and Senai Campus in Kampung Sinaran Baru</b></li>
+
+    <div class="gallery">
+      <img src="intern5.jpeg" alt="Intern5" class="gallery-item" onclick="openModal('modal5','Intern 5')">
+      <img src="intern6.jpg" alt="Intern6" class="gallery-item" onclick="openModal('modal6','Intern 6')">
+      <img src="intern7.jpeg" alt="Intern7" class="gallery-item" onclick="openModal('modal7','Intern 7')">
+      <img src="intern8.jpg" alt="Intern8" class="gallery-item" onclick="openModal('modal8','Intern 8')">
+    </div>
+
+      <br><li><b>Participating in a hiking program with ADTEC JTM Campus Pasir Gudang and Senai staff at Bukit Tiz.</b></li>
+
+    <div class="gallery">
+      <img src="intern9.jpeg" alt="Intern9" class="gallery-item" onclick="openModal('modal9','Intern 9')">
+      <img src="intern10.jpeg" alt="Intern10" class="gallery-item" onclick="openModal('moda20','Intern 10')">
+      <img src="intern11.jpeg" alt="Intern11" class="gallery-item" onclick="openModal('moda21','Intern 11')">
+      <img src="intern12.jpeg" alt="Intern12" class="gallery-item" onclick="openModal('moda22','Intern 12')">
+    </div>
+
+    </ul>
+</div>
+
+<div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="intern1.jpeg" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="intern2.jpeg" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="intern3.jpeg" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="intern4.jpeg" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<script>
+function openModal(id, captionText) {
+  let modal = document.getElementById(id);
+  modal.classList.add("show");
+  modal.querySelector(".caption").innerText = captionText;
+}
+
+function closeModal(id) {
+  let modal = document.getElementById(id);
+  modal.classList.remove("show");
+}
+</script>
+
+</body>
+</html>

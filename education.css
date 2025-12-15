@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #F3E1FA;
+    margin: 0;
+    padding: 0;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #E8CCF5, #D9B3FF);
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.home-btn {
+    font-size: 22px;
+    color: white;
+    padding: 8px 12px;
+    background: #BA55D3;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #8A2BE2;
+    transform: scale(1.1);
+}
+
+.page-title {
+    flex: 1;
+    font-size: 36px;
+    color: #4B0082;
+    text-align: center;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+nav {
+    width: 200px;
+    min-height: 80vh;
+    background: linear-gradient(180deg, #dba4ff, #ffcef5);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+nav a {
+    display: block;
+    background: white;
+    padding: 12px;
+    margin: 10px 0;
+    color: #663399;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: #efd6ff;
+    transform: translateX(8px);
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #7B2CBF;
+    margin-bottom: 20px;
+}
+
+.edu-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #BA55D3, #8A2BE2);
+}
+
+.edu-table th {
+    background: #BA55D3;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.edu-table td {
+    padding: 12px;
+    background: #F8EDFF;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.edu-table tr:nth-child(even) td {
+    background: #F3E1FA;
+}
+
+.edu-table tr:hover td {
+    background: #E8CCF5;
+    box-shadow: 0 0 15px #BA55D3;
+    transform: scale(1.02);
+}
+
+.school-logo {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.badge {
+    background: #9C4BDA;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.edu-table td a {
+    color: #7B2CBF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.edu-table td a:hover {
+    color: #9C4BDA;
+    text-decoration: underline;
+}
+
+.edu-table tr {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.edu-table tr:nth-child(1) { animation-delay: 0.1s; }
+.edu-table tr:nth-child(2) { animation-delay: 0.2s; }
+.edu-table tr:nth-child(3) { animation-delay: 0.3s; }
+.edu-table tr:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .edu-table {
+        font-size: 14px;
+    }
+
+    .school-logo {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.school-gallery-section {
+    margin-top: 50px;
+}
+
+.school-gallery-box {
+    background: #FFFFFF;
+    padding: 25px;
+    margin: 40px auto;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.school-gallery-box h3 {
+    text-align: center;
+    font-size: 26px;
+    color: #7B2CBF;
+    margin-bottom: 20px;
+}
+
+.school-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.school-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 4px solid #D9B3FF;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.school-gallery img:hover {
+    transform: scale(1.08);
+    border-color: #BA55D3;
+}
